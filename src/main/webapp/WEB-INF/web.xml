@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+
+	
+    <servlet>
+    	<servlet-name>projectinsert</servlet-name>
+    	<servlet-class>com.project.ProjectsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>projectinsert</servlet-name>
+    	<url-pattern>/pinsert</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+		<servlet-name>viewproject</servlet-name>
+		<servlet-class>com.project.ManagerDashServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>viewproject</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+    	<servlet-name>projectupdate</servlet-name>
+    	<servlet-class>com.project.updateProject</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>projectupdate</servlet-name>
+    	<url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>projectdelete</servlet-name>
+    	<servlet-class>com.project.deleteProject</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>projectdelete</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+    	<servlet-name>taskinsert</servlet-name>
+    	<servlet-class>com.project.insertTask</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>taskinsert</servlet-name>
+    	<url-pattern>/tinsert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>taskupdate</servlet-name>
+    	<servlet-class>com.project.updateTask</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>taskupdate</servlet-name>
+    	<url-pattern>/tupdate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>taskdelete</servlet-name>
+    	<servlet-class>com.project.deleteTask</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>taskdelete</servlet-name>
+    	<url-pattern>/tdelete</url-pattern>
+    </servlet-mapping>
+	
+	
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</web-app>

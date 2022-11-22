@@ -75,10 +75,47 @@
 	
 
 	
+	
+	
+	
+	<servlet>
+        <servlet-name>StaffLoging</servlet-name>
+        <servlet-class>com.staff.staffLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>StaffLoging</servlet-name>
+    	 <url-pattern>/StaffLoging</url-pattern>
+    </servlet-mapping>
+ 
 
-	
-	
-	
+    <servlet>
+        <servlet-name>AddStaff</servlet-name>
+        <servlet-class>com.admin.addStaffServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>AddStaff</servlet-name>
+    	 <url-pattern>/AddStaff</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>promoEmployee</servlet-name>
+        <servlet-class>com.admin.promoEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>promoEmployee</servlet-name>
+    	 <url-pattern>/promote</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>RemoveEmployee</servlet-name>
+        <servlet-class>com.manager.RemoveEmployee</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	 <servlet-name>RemoveEmployee</servlet-name>
+    	 <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    	
 	
 	
 	
